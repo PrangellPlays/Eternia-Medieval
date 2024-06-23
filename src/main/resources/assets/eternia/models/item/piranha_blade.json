@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "eternia:item/god_weapon/savannah/piranha_blade/piranha_blade"
+  }
+}

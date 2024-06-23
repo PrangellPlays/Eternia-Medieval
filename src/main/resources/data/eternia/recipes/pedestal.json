@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "_Q_",
+    "IRI",
+    "_Q_"
+  ],
+  "key": {
+    "_": {
+      "item": "minecraft:quartz_slab"
+    },
+    "Q": {
+      "item": "minecraft:quartz_stairs"
+    },
+    "I": {
+      "item": "minecraft:ink_sac"
+    },
+    "R": {
+      "item": "minecraft:quartz_pillar"
+    }
+  },
+  "result": {
+    "item": "eternia:pedestal",
+    "count": 2
+  }
+}

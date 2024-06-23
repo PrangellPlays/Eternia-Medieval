@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "eternia",
+	"version": "${version}",
+	"name": "Eternia",
+	"description": "Adding Weaponry and Items to the game for my Medieval server with friends (Eternia)",
+	"authors": [
+		"Owner - PrangellPlays"
+	],
+	"license": "PrangellPlays",
+	"icon": "assets/eternia/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.prangellplays.eternia.Eternia"
+		],
+		"client": [
+			"dev.prangellplays.eternia.EterniaClient"
+		],
+		"fabric-datagen": [
+			"dev.prangellplays.eternia.EterniaDataGenerator"
+		]
+	},
+	"mixins": [
+		"eternia.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/class_8109": [
+				"dev/prangellplays/eternia/damage/DamageSourcesExt"
+			]
+		}
+	}
+}

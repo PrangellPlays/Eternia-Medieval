@@ -1,0 +1,33 @@
+{
+	"required": true,
+	"package": "dev.prangellplays.eternia.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"server.DamageSourcesMixin",
+		"server.LivingEntityMixin",
+		"server.ShieldBlockedMixin",
+		"server.ShieldDelayMixin",
+		"server.PlayerEntityMixin",
+		"server.EntityNavigationMixin",
+		"server.LookControlMixin",
+		"server.MobEntityMixin"
+	],
+	"client": [
+		"client.EnchantmentMixin",
+		"client.BipedEntityModelMixin",
+		"client.ItemRendererAccessor",
+		"client.ItemRendererMixin",
+		"client.ModelLoaderMixin",
+		"client.WorldRendererMixin",
+		"client.KeyboardMixin",
+		"client.MouseMixin",
+
+		"client.ClearSavedPedestalItemOnDestructionMixn",
+		"client.ClearSavedPedestalOnTitleScreenMixin",
+		"client.RenderItemAbovePedestalMixin",
+		"client.UpdateRenderOnPedestalScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "eternia:item/cursebone_bow",
+  "textures": {
+    "layer0": "eternia:item/god_weapon/nether/cursebone_bow/cursebone_bow_pulling_1"
+  }
+}

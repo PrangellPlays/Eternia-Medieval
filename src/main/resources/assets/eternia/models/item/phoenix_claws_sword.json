@@ -1,0 +1,6 @@
+{
+	"parent": "eternia:item/phoenix_claws",
+	"textures": {
+		"0": "eternia:item/god_weapon/jungle/phoenix_claws/phoenix_claws"
+	}
+}
