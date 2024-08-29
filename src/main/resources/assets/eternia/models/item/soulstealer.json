@@ -1,0 +1,17 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "eternia:item/event/soulstealer/soulstealer"
+	},
+	"display": {
+		"gui": {
+			"translation": [1.75, 1.75, 0],
+			"scale": [1.2, 1.2, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-2.25, 2.25, 0.25],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

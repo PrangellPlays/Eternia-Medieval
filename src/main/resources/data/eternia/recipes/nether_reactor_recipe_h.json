@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NWN",
+        "BSB",
+        "NWN"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "W": {
+            "item": "minecraft:wither_rose"
+        },
+        "B": {
+            "item": "minecraft:blaze_powder"
+        },
+        "S": {
+            "item": "minecraft:wither_skeleton_skull"
+        }
+    },
+    "result": {
+        "item": "eternia:nether_reactor_core",
+        "count": 1
+    }
+}

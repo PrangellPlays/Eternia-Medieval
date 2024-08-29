@@ -1,6 +1,6 @@
 package dev.prangellplays.eternia.mixin.client;
 
-import dev.prangellplays.eternia.item.jungle.PhoenixClawsShovelItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.PhoenixClawsShovelItem;
 import dev.prangellplays.eternia.utils.BlockUtil;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;

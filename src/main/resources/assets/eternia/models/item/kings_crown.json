@@ -1,7 +1,7 @@
 {
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "eternia:item/god_item/kings_crown/kings_crown"
+		"0": "eternia:item/event/kings_crown/kings_crown"
 	},
 	"elements": [
 		{

@@ -1,8 +1,8 @@
 package dev.prangellplays.eternia.mixin.client;
 
 import dev.prangellplays.eternia.Eternia;
-import dev.prangellplays.eternia.item.jungle.NaturesUndergrowthItem;
-import dev.prangellplays.eternia.item.taiga.FrostboundShieldItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.NaturesUndergrowthItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.taiga.FrostboundShieldItem;
 import dev.prangellplays.eternia.registry.EterniaItems;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -30,6 +30,9 @@ public abstract class ItemRendererMixin {
         }
         if (stack.isOf(EterniaItems.WINDWALKER_BLADE) && renderMode != ModelTransformationMode.GUI && renderMode != ModelTransformationMode.GROUND && renderMode != ModelTransformationMode.FIXED) {
             return ((ItemRendererAccessor) this).bread$getModels().getModelManager().getModel(new ModelIdentifier(Eternia.MOD_ID, "windwalker_blade_handheld", "inventory"));
+        }
+        if (stack.isOf(EterniaItems.SOULSTEALER) && renderMode != ModelTransformationMode.GUI && renderMode != ModelTransformationMode.FIXED) {
+            return ((ItemRendererAccessor) this).bread$getModels().getModelManager().getModel(new ModelIdentifier(Eternia.MOD_ID, "soulstealer_handheld", "inventory"));
         }
         return value;
     }

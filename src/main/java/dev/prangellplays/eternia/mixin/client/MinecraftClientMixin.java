@@ -1,6 +1,6 @@
 package dev.prangellplays.eternia.mixin.client;
 
-import dev.prangellplays.eternia.item.jungle.NaturesUndergrowthItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.NaturesUndergrowthItem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;

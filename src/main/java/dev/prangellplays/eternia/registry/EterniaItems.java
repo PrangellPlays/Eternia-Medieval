@@ -1,43 +1,59 @@
 package dev.prangellplays.eternia.registry;
 
 import dev.prangellplays.eternia.Eternia;
-import dev.prangellplays.eternia.item.GodItem.TheElementalConvergenceItem;
-import dev.prangellplays.eternia.item.darkoakforest.WithersEdgeGlaiveItem;
-import dev.prangellplays.eternia.item.desert.DesertedExcaliburItem;
-import dev.prangellplays.eternia.item.desert.PharaohsStaffItem;
-import dev.prangellplays.eternia.item.end.CelestialSpearItem;
+import dev.prangellplays.eternia.item.godweapons.event.EnderBladeItem;
+import dev.prangellplays.eternia.item.godweapons.event.TheElementalConvergenceItem;
+import dev.prangellplays.eternia.item.godweapons.event.SoulstealerItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.darkoakforest.WithersEdgeGlaiveItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.desert.DesertedExcaliburItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.desert.PharaohsStaffItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.end.CelestialSpearItem;
+import dev.prangellplays.eternia.item.godweapons.event.TheKingsCrownItem;
+import dev.prangellplays.eternia.item.godweapons.tier2.jungle.PhoenixSwordItem;
+import dev.prangellplays.eternia.item.godweapons.tier2.mushroom.GiantSword;
+import dev.prangellplays.eternia.item.godweapons.tier3.jungle.PhoenixBladeItem;
+import dev.prangellplays.eternia.item.item.BoneMealerItem;
 import dev.prangellplays.eternia.item.item.CoinItem;
-import dev.prangellplays.eternia.item.plains.BranchedAxeItem;
-import dev.prangellplays.eternia.item.plains.BranchedAxeSwordItem;
-import dev.prangellplays.eternia.item.plains.DripstoneDaggerItem;
-import dev.prangellplays.eternia.item.plains.WindwalkerBladeItem;
-import dev.prangellplays.eternia.item.savanah.GaleSphereItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.plains.BranchedAxeItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.plains.BranchedAxeSwordItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.plains.DripstoneDaggerItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.plains.WindwalkerBladeItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.savanah.GaleSphereItem;
+import dev.prangellplays.eternia.item.item.mob_drops.ShulkerDustItem;
 import dev.prangellplays.eternia.item.item.spawn.*;
-import dev.prangellplays.eternia.item.jungle.NaturesUndergrowthItem;
-import dev.prangellplays.eternia.item.jungle.PhoenixClawsShovelItem;
-import dev.prangellplays.eternia.item.jungle.PhoenixClawsSwordItem;
-import dev.prangellplays.eternia.item.jungle.VineWhipItem;
-import dev.prangellplays.eternia.item.mesa.FlamingScytheItem;
-import dev.prangellplays.eternia.item.mushroom.FungalGauntletItem;
-import dev.prangellplays.eternia.item.nether.CurseboneBowItem;
-import dev.prangellplays.eternia.item.nether.CursedArrowItem;
-import dev.prangellplays.eternia.item.savanah.GaleSpearItem;
-import dev.prangellplays.eternia.item.savanah.PiranhaBladeItem;
-import dev.prangellplays.eternia.item.savanah.RootSlicerItem;
-import dev.prangellplays.eternia.item.taiga.FrostboundShieldItem;
-import dev.prangellplays.eternia.item.taiga.FrostedScytheItem;
-import dev.prangellplays.eternia.item.taiga.GlacialDaggerItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.NaturesUndergrowthItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.PhoenixClawsShovelItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.PhoenixClawsSwordItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.VineWhipItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.mesa.FlamingScytheItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.mushroom.FungalGauntletItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.nether.CurseboneBowItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.nether.CursedArrowItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.savanah.GaleSpearItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.savanah.PiranhaBladeItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.savanah.RootSlicerItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.taiga.FrostboundShieldItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.taiga.FrostedScytheItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.taiga.GlacialDaggerItem;
+import dev.prangellplays.eternia.item.item.upgrade.EnderReactorCoreItem;
+import dev.prangellplays.eternia.item.item.upgrade.EnderStarItem;
+import dev.prangellplays.eternia.item.item.upgrade.NetherReactorCoreItem;
+import dev.prangellplays.eternia.item.util.EterniaArmourMaterials;
 import dev.prangellplays.eternia.item.util.EterniaToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
-public class EterniaItems {
+import java.util.List;
 
+public class EterniaItems {
     //GOD WEAPONS
+    //Tier 1
     //Jungle
     public static final Item VINE_WHIP = registerItem("vine_whip", new VineWhipItem(EterniaToolMaterials.VINE_WHIP, 7, -2.3f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
     public static final Item NATURES_UNDERGROWTH = registerItem("natures_undergrowth", new NaturesUndergrowthItem(EterniaToolMaterials.NATURES_UNDERGROWTH, 3, 0, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
@@ -45,7 +61,7 @@ public class EterniaItems {
     public static final Item PHOENIX_CLAWS_SHOVEL = registerItem("phoenix_claws_shovel", new PhoenixClawsShovelItem(EterniaToolMaterials.PHOENIX_CLAWS, 7, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     //Desert
-    public static final Item PHARAOHS_STAFF = registerItem("pharaohs_staff", new PharaohsStaffItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item PHARAOHS_STAFF = registerItem("pharaohs_staff", new PharaohsStaffItem(new FabricItemSettings().fireproof().maxCount(1).rarity(Rarity.EPIC)));
     public static final Item DESERTED_EXCALIBUR = registerItem("deserted_excalibur", new DesertedExcaliburItem(EterniaToolMaterials.DESERTED_EXCALIBUR, 8, -2.7f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     //Dark Oak Forest
@@ -81,8 +97,82 @@ public class EterniaItems {
     //End
     public static final Item CELESTIAL_SPEAR = registerItem("celestial_spear", new CelestialSpearItem(EterniaToolMaterials.CELESTIAL_SPEAR, 8, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
-    //GOD ITEMS
+
+
+    //Tier 2
+    //Jungle
+    public static final Item PHOENIX_SWORD = registerItem("phoenix_sword", new PhoenixSwordItem(EterniaToolMaterials.PHOENIX_SWORD, 7, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+
+    //Desert
+
+
+    //Dark Oak Forest
+
+
+    //Taiga
+
+
+    //Savannah
+
+
+    //Mesa
+
+
+    //Mushroom
+    public static final Item GIANT_SWORD = registerItem("giant_sword", new GiantSword(EterniaToolMaterials.GIANT_SWORD, 7, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    //Plains
+
+
+    //Nether
+
+
+    //End
+
+
+
+
+    //Tier 3
+    //Jungle
+    public static final Item PHOENIX_BLADE = registerItem("phoenix_blade", new PhoenixBladeItem(EterniaToolMaterials.PHOENIX_BLADE, 7, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    //Desert
+
+
+    //Dark Oak Forest
+
+
+    //Taiga
+
+
+    //Savannah
+
+
+    //Mesa
+
+
+    //Mushroom
+
+
+    //Plains
+
+
+    //Nether
+
+
+    //End
+
+
+
+
+    //Event
+    public static final Item SOULSTEALER = registerItem("soulstealer", new SoulstealerItem(EterniaToolMaterials.SOULSTEALER, 9, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item ENDER_BLADE = registerItem("ender_blade", new EnderBladeItem(EterniaToolMaterials.ENDERBLADE, 9, -2.2f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item KINGS_CROWN = registerItem("kings_crown", new TheKingsCrownItem(EterniaArmourMaterials.KINGS_CROWN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof().maxCount(1), List.of(TheKingsCrownItem.Customizations.KINGS_CROWN)));
     public static final Item ELEMENTAL_CONVERGENCE = registerItem("elemental_convergence", new TheElementalConvergenceItem(EterniaToolMaterials.ELEMENTAL_CONERGENCE, 11, -2.1f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+
 
     //Items
     public static final Item VILLAGER_SPAWN = registerItem("villager_spawn", new VillagerSpawnItem(new FabricItemSettings().rarity(Rarity.RARE)));
@@ -92,6 +182,13 @@ public class EterniaItems {
     public static final Item PIG_SPAWN = registerItem("pig_spawn", new PigSpawnItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item HORSE_SPAWN = registerItem("horse_spawn", new HorseSpawnItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item COIN = registerItem("coin", new CoinItem(new FabricItemSettings().fireproof().rarity(Rarity.RARE)));
+    public static final Item ENDER_STAR = registerItem("ender_star", new EnderStarItem(new FabricItemSettings().fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item NETHER_REACTOR_CORE = registerItem("nether_reactor_core", new NetherReactorCoreItem(new FabricItemSettings().fireproof()));
+    public static final Item ENDER_REACTOR_CORE = registerItem("ender_reactor_core", new EnderReactorCoreItem(new FabricItemSettings().fireproof()));
+    public static final Item BONE_MEALER = registerItem("bone_mealer", new BoneMealerItem(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item COOKED_CARROT = registerItem("cooked_carrot", new Item(new FabricItemSettings().food(EterniaFoodComponents.COOKED_CARROT)));
+    public static final Item SHULKER_DUST = registerItem("shulker_dust", new ShulkerDustItem(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item ENDERITE_INGOT = registerItem("enderite_ingot", new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Eternia.MOD_ID, name), item);

@@ -28,10 +28,7 @@ import java.util.Random;
 public class WeaponPedestalBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
-    private static final int INPUT_SLOT = 0;
-    private static final int FLUID_ITEM_SLOT = 1;
-    private static final int OUTPUT_SLOT = 2;
-    private static final int ENERGY_ITEM_SLOT = 3;
+    private static final int SLOT = 2;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -103,24 +100,13 @@ public class WeaponPedestalBlockEntity extends BlockEntity implements ExtendedSc
         if (!this.getStack(0).isEmpty()) {
             world.playSound((PlayerEntity)null, (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.MASTER, 1.0F, -2.0F);
         }
-        if(canInsertIntoOutputSlot()) {
-            increaseCraftingProgress();
+        if(canInsertIntoSlot()) {
             markDirty(world, pos, state);
-        } else {
-            resetProgress();
         }
     }
 
-    private void resetProgress() {
-        this.progress = 0;
-    }
-
-    private void increaseCraftingProgress() {
-        this.progress++;
-    }
-
-    private boolean canInsertIntoOutputSlot() {
-        return this.getStack(OUTPUT_SLOT).isEmpty() ||
-                this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
+    private boolean canInsertIntoSlot() {
+        return this.getStack(SLOT).isEmpty() ||
+                this.getStack(SLOT).getCount() < this.getStack(SLOT).getMaxCount();
     }
 }

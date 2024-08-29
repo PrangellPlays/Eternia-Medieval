@@ -1,7 +1,7 @@
 package dev.prangellplays.eternia.mixin.server;
 
 import com.mojang.authlib.GameProfile;
-import dev.prangellplays.eternia.item.jungle.NaturesUndergrowthItem;
+import dev.prangellplays.eternia.item.godweapons.tier1.jungle.NaturesUndergrowthItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

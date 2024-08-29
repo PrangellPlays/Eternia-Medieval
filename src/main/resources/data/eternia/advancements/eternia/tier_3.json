@@ -1,0 +1,34 @@
+{
+  "parent": "eternia:eternia/tier_2",
+  "display": {
+    "icon": {
+      "item": "eternia:windwalker_blade"
+    },
+    "title": "Tier 3",
+    "description": "You upgraded your tier 2 god weapon into a tier 3 god weapon",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eternia:phoenix_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:phoenix_blade"
+            ]
+          }
+        ]
+      }
+    }
+  },
+    "requirements": [
+      [
+        "eternia:phoenix_blade"
+      ]
+    ],
+    "sends_telemetry_event": true
+}

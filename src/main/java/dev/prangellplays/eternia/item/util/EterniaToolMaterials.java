@@ -7,6 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum EterniaToolMaterials implements ToolMaterial {
+    //Tier 1
     VINE_WHIP(5, 0, 6.5f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
     NATURES_UNDERGROWTH(5, 0, 6.5f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
     PHOENIX_CLAWS(5, 0, 12.0f, 0, 0,() -> Ingredient.ofItems(Items.AIR)),
@@ -23,6 +24,17 @@ public enum EterniaToolMaterials implements ToolMaterial {
     DRIPSTONE_DAGGER(5, 0, 6.5f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
     BRANCHED_AXE(5, 0, 50f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
     CELESTIAL_SPEAR(5, 0, 6.5f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
+
+    //Tier 2
+    PHOENIX_SWORD(5, 0, 12.0f, 0, 0,() -> Ingredient.ofItems(Items.AIR)),
+    GIANT_SWORD(5, 0, 12.0f, 0, 0,() -> Ingredient.ofItems(Items.AIR)),
+
+    //Tier 3
+    PHOENIX_BLADE(5, 0, 12.0f, 0, 0,() -> Ingredient.ofItems(Items.AIR)),
+
+    //Event
+    SOULSTEALER(5, 0, 6.5f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
+    ENDERBLADE(5, 0, 6.5f, 0, 26,() -> Ingredient.ofItems(Items.AIR)),
     ELEMENTAL_CONERGENCE(5, 0, 6.5f, 0, 26, () -> Ingredient.ofItems(Items.AIR));
 
     private final int miningLevel;

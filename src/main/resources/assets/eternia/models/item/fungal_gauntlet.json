@@ -1,7 +1,7 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "eternia:item/god_weapon/mushroom/fungal_gauntlet"
+		"0": "eternia:item/god_weapon/mushroom/tier_1/fungal_gauntlet/fungal_gauntlet"
 	},
 	"elements": [
 		{

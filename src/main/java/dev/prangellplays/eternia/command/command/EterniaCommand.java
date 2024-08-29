@@ -56,12 +56,6 @@ public class EterniaCommand {
 
         dispatcher.register((LiteralArgumentBuilder) ((LiteralArgumentBuilder) CommandManager.literal("eternia").then(((LiteralArgumentBuilder) CommandManager.literal("start").requires((commandSourceStack) -> {
             return commandSourceStack.hasPermissionLevel(2);
-        }).then(((LiteralArgumentBuilder) CommandManager.literal("samyoool").requires((commandSourceStack) -> {
-            return commandSourceStack.hasPermissionLevel(2);
-        })).executes(EterniaCommand::startsamyoool))))));
-
-        dispatcher.register((LiteralArgumentBuilder) ((LiteralArgumentBuilder) CommandManager.literal("eternia").then(((LiteralArgumentBuilder) CommandManager.literal("start").requires((commandSourceStack) -> {
-            return commandSourceStack.hasPermissionLevel(2);
         }).then(((LiteralArgumentBuilder) CommandManager.literal("PotatoBoy24").requires((commandSourceStack) -> {
             return commandSourceStack.hasPermissionLevel(2);
         })).executes(EterniaCommand::startpotatoboy24))))));
@@ -71,6 +65,18 @@ public class EterniaCommand {
         }).then(((LiteralArgumentBuilder) CommandManager.literal("alopeciagaming").requires((commandSourceStack) -> {
             return commandSourceStack.hasPermissionLevel(2);
         })).executes(EterniaCommand::startalopeciagaming))))));
+
+        dispatcher.register((LiteralArgumentBuilder) ((LiteralArgumentBuilder) CommandManager.literal("eternia").then(((LiteralArgumentBuilder) CommandManager.literal("start").requires((commandSourceStack) -> {
+            return commandSourceStack.hasPermissionLevel(2);
+        }).then(((LiteralArgumentBuilder) CommandManager.literal("BlimpAndrew").requires((commandSourceStack) -> {
+            return commandSourceStack.hasPermissionLevel(2);
+        })).executes(EterniaCommand::startblimpandrew))))));
+
+        dispatcher.register((LiteralArgumentBuilder) ((LiteralArgumentBuilder) CommandManager.literal("eternia").then(((LiteralArgumentBuilder) CommandManager.literal("start").requires((commandSourceStack) -> {
+            return commandSourceStack.hasPermissionLevel(2);
+        }).then(((LiteralArgumentBuilder) CommandManager.literal("iiWaterdragon").requires((commandSourceStack) -> {
+            return commandSourceStack.hasPermissionLevel(2);
+        })).executes(EterniaCommand::startiiwaterdragon))))));
 
         dispatcher.register((LiteralArgumentBuilder) ((LiteralArgumentBuilder) CommandManager.literal("eternia").then(((LiteralArgumentBuilder) CommandManager.literal("crown").requires((commandSourceStack) -> {
             return commandSourceStack.hasPermissionLevel(2);
@@ -175,19 +181,6 @@ public class EterniaCommand {
         context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity Semmpie armor.head with minecraft:leather_helmet");
         context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity Semmpie armor.feet with minecraft:leather_boots");
 
-        //samyoool
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp samyoool 306 85 1204");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint samyoool 306 85 1204");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "origin set samyoool origins:origin medieval:plains_inhabitant");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.0 with medievalweapons:iron_long_sword");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.1 with minecraft:stone_pickaxe");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.2 with minecraft:stone_axe");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.3 with minecraft:stone_shovel");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.7 with dehydration:diamond_leather_flask");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.8 with minecraft:bread 16");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool armor.head with minecraft:leather_helmet");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool armor.feet with minecraft:leather_boots");
-
         //PotatoBoy24
         context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp PotatoBoy24 -679 72 -1564");
         context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint PotatoBoy24 -679 72 -1564");
@@ -216,6 +209,31 @@ public class EterniaCommand {
         context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity alopeciagaming armor.head with minecraft:leather_helmet");
         context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity alopeciagaming armor.feet with minecraft:leather_boots");
 
+        //BlimpAndrew
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp BlimpAndrew 306 85 1204");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint BlimpAndrew 306 85 1204");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "origin set BlimpAndrew origins:origin medieval:plains_inhabitant");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.0 with medievalweapons:iron_long_sword");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.1 with minecraft:stone_pickaxe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.2 with minecraft:stone_axe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.3 with minecraft:stone_shovel");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.7 with dehydration:diamond_leather_flask");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.8 with minecraft:bread 16");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew armor.head with minecraft:leather_helmet");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew armor.feet with minecraft:leather_boots");
+
+        //iiWaterdragon
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp iiWaterdragon -592 77 2142");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint iiWaterdragon -592 77 2142");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "origin set iiWaterdragon origins:origin medieval:savannah_inhabitant");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.0 with medievalweapons:iron_long_sword");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.1 with minecraft:stone_pickaxe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.2 with minecraft:stone_axe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.3 with minecraft:stone_shovel");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.7 with dehydration:diamond_leather_flask");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.8 with minecraft:bread 16");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon armor.head with minecraft:leather_helmet");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon armor.feet with minecraft:leather_boots");
         return 1;
     }
 
@@ -321,21 +339,7 @@ public class EterniaCommand {
         return 1;
     }
 
-    private static int startsamyoool(CommandContext<ServerCommandSource> context) {
-        //samyoool
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp samyoool 306 85 1204");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint samyoool 306 85 1204");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "origin set samyoool origins:origin medieval:plains_inhabitant");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.0 with medievalweapons:iron_long_sword");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.1 with minecraft:stone_pickaxe");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.2 with minecraft:stone_axe");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.3 with minecraft:stone_shovel");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.7 with dehydration:diamond_leather_flask");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool hotbar.8 with minecraft:bread 16");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool armor.head with minecraft:leather_helmet");
-        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity samyoool armor.feet with minecraft:leather_boots");
-        return 1;
-    }
+
 
     private static int startpotatoboy24(CommandContext<ServerCommandSource> context) {
         //PotatoBoy24
@@ -371,6 +375,38 @@ public class EterniaCommand {
         return 1;
     }
 
+    private static int startblimpandrew(CommandContext<ServerCommandSource> context) {
+        //BlimpAndrew
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp BlimpAndrew 306 85 1204");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint BlimpAndrew 306 85 1204");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "origin set BlimpAndrew origins:origin medieval:plains_inhabitant");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.0 with medievalweapons:iron_long_sword");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.1 with minecraft:stone_pickaxe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.2 with minecraft:stone_axe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.3 with minecraft:stone_shovel");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.7 with dehydration:diamond_leather_flask");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew hotbar.8 with minecraft:bread 16");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew armor.head with minecraft:leather_helmet");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity BlimpAndrew armor.feet with minecraft:leather_boots");
+        return 1;
+    }
+
+    private static int startiiwaterdragon(CommandContext<ServerCommandSource> context) {
+        //iiWaterdragon
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "tp iiWaterdragon -592 77 2142");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "spawnpoint iiWaterdragon -592 77 2142");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "origin set iiWaterdragon origins:origin medieval:savannah_inhabitant");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.0 with medievalweapons:iron_long_sword");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.1 with minecraft:stone_pickaxe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.2 with minecraft:stone_axe");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.3 with minecraft:stone_shovel");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.7 with dehydration:diamond_leather_flask");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon hotbar.8 with minecraft:bread 16");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon armor.head with minecraft:leather_helmet");
+        context.getSource().getServer().getCommandManager().executeWithPrefix(context.getSource(), "item replace entity iiWaterdragon armor.feet with minecraft:leather_boots");
+        return 1;
+    }
+
     //Radiation_69420 - Taiga
     //Blimp_Tyler - Mushroom
     //Skynovic - Desert
@@ -380,6 +416,7 @@ public class EterniaCommand {
     //alopeciagaming - Mesa
     //Semmpie - Desert
     //danipadipa - Taiga
+    //iiWaterdragon - Savannah
 
     //Desert: -1145 80 1990
     //Jungle: 2947 78 -815

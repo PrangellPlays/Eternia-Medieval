@@ -24,10 +24,17 @@ public class EterniaItemGroups {
                 entries.add(EterniaItems.COIN);
                 entries.add(EterniaBlocks.PEDESTAL);
                 entries.add(EterniaBlocks.WEAPON_PEDESTAL);
+                entries.add(EterniaItems.ENDER_STAR);
+                entries.add(EterniaItems.NETHER_REACTOR_CORE);
+                entries.add(EterniaItems.ENDER_REACTOR_CORE);
+                entries.add(EterniaItems.BONE_MEALER);
+                entries.add(EterniaItems.COOKED_CARROT);
+                entries.add(EterniaItems.SHULKER_DUST);
+                entries.add(EterniaItems.ENDERITE_INGOT);
             }).build());
-    public static final ItemGroup ETERNIA_GOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Eternia.MOD_ID, "god_items"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eternia.god_items")).icon(() -> new ItemStack(EterniaArmour.KINGS_CROWN)).entries((displayContext, entries) -> {
+    public static final ItemGroup ETERNIA_GOD_WEAPONS_T1_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Eternia.MOD_ID, "god_weapons_t1"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eternia.god_weapons_t1")).icon(() -> new ItemStack(EterniaItems.WINDWALKER_BLADE)).entries((displayContext, entries) -> {
                 //Jungle
                 entries.add(EterniaItems.VINE_WHIP);
                 entries.add(EterniaItems.NATURES_UNDERGROWTH);
@@ -66,10 +73,81 @@ public class EterniaItemGroups {
 
                 //End
                 entries.add(EterniaItems.CELESTIAL_SPEAR);
+            }).build());
+    public static final ItemGroup ETERNIA_GOD_WEAPONS_T2_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Eternia.MOD_ID, "god_weapons_t2"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eternia.god_weapons_t2")).icon(() -> new ItemStack(EterniaItems.PHOENIX_SWORD)).entries((displayContext, entries) -> {
+                //Jungle
+                entries.add(EterniaItems.PHOENIX_SWORD);
 
-                //God Items/ Weapons
+                //Desert
+
+
+                //Dark Oak Forest
+
+
+                //Taiga
+
+
+                //Savannah
+
+
+                //Mesa
+
+
+                //Mushroom
+                entries.add(EterniaItems.GIANT_SWORD);
+
+                //Plains
+
+
+                //Nether
+
+
+                //End
+
+            }).build());
+    public static final ItemGroup ETERNIA_GOD_WEAPONS_T3_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Eternia.MOD_ID, "god_weapons_t3"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eternia.god_weapons_t3")).icon(() -> new ItemStack(EterniaItems.PHOENIX_BLADE)).entries((displayContext, entries) -> {
+                //Jungle
+                entries.add(EterniaItems.PHOENIX_BLADE);
+
+                //Desert
+
+
+                //Dark Oak Forest
+
+
+                //Taiga
+
+
+                //Savannah
+
+
+                //Mesa
+
+
+                //Mushroom
+
+
+                //Plains
+
+
+                //Nether
+
+
+                //End
+
+            }).build());
+    public static final ItemGroup ETERNIA_EVENT_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Eternia.MOD_ID, "event"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eternia.event")).icon(() -> new ItemStack(EterniaItems.KINGS_CROWN)).entries((displayContext, entries) -> {
+                //Events
+                entries.add(EterniaItems.SOULSTEALER);
+                entries.add(EterniaItems.ENDER_BLADE);
+                entries.add(EterniaItems.KINGS_CROWN);
                 entries.add(EterniaItems.ELEMENTAL_CONVERGENCE);
-                entries.add(EterniaArmour.KINGS_CROWN);
             }).build());
 
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "eternia:item/event/elemental_convergence/elemental_convergence"
+  }
+}

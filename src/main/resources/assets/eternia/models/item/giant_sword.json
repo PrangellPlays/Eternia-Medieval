@@ -1,0 +1,39 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "eternia:item/god_weapon/mushroom/tier_2/giant_sword/giant_sword"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 23.25, 3.25],
+			"scale": [4, 4, 2.03]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, -90, 0],
+			"translation": [0, 23.25, 3.25],
+			"scale": [4, 4, 2]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 3, 1.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 3, 1.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"scale": [4, 4, 2]
+		},
+		"head": {
+			"rotation": [0, 0, -75],
+			"translation": [0, 10, 0]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

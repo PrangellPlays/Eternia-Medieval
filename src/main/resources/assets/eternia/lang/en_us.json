@@ -1,12 +1,19 @@
 {
   "_comment": "God Weapons",
   "_comment": "Jungle",
+  "_comment": "Tier 1",
   "item.eternia.vine_whip": "§2Vine Whip",
   "item.eternia.natures_undergrowth": "§2Natures Undergrowth",
-  "item.eternia.phoenix_claws_sword": "§2Phoenix Claws",
+  "item.eternia.phoenix_claws_sword": "§2Phoenix Claws (Sword)",
   "tooltip.eternia.phoenix_claws_sword.swap": "Crouch Right Click to swap to shovel version",
-  "item.eternia.phoenix_claws_shovel": "§2Phoenix Claws",
+  "item.eternia.phoenix_claws_shovel": "§2Phoenix Claws (Shovel)",
   "tooltip.eternia.phoenix_claws_shovel.swap": "Crouch Right Click to swap to sword version",
+
+  "_comment": "Tier 2",
+  "item.eternia.phoenix_sword": "§2Phoenix Sword",
+
+  "_comment": "Tier 3",
+  "item.eternia.phoenix_blade": "§2Phoenix Blade",
 
   "_comment": "Desert",
   "item.eternia.pharaohs_staff": "§6Pharaohs Staff",
@@ -34,14 +41,18 @@
   "item.eternia.flaming_scythe": "§cFlaming Scythe",
 
   "_comment": "Mushroom",
+  "_comment": "Tier 1",
   "item.eternia.fungal_gauntlet": "§dFungal Gauntlet",
+
+  "_comment": "Tier 2",
+  "item.eternia.giant_sword": "Giant Sword",
 
   "_comment": "Plains",
   "item.eternia.windwalker_blade": "§aWindwalker Blade",
   "item.eternia.dripstone_dagger": "§aDripstone Dagger",
-  "item.eternia.branched_axe_sword": "§aBranched Axe",
+  "item.eternia.branched_axe_sword": "§aBranched Axe (Sword)",
   "tooltip.eternia.branched_axe_sword.swap": "Crouch Right Click to swap to axe version",
-  "item.eternia.branched_axe": "§aBranched Axe",
+  "item.eternia.branched_axe": "§aBranched Axe (Axe)",
   "tooltip.eternia.branched_axe.swap": "Crouch Right Click to swap to sword version",
 
   "_comment": "Nether",
@@ -57,7 +68,9 @@
   "tooltip.eternia.celestial_spear.l1": "With this granted power, the user can use its",
   "tooltip.eternia.celestial_spear.l2": "celestial ability to lock and unlock the end realm.",
 
-  "_comment": "God Items",
+  "_comment": "Event",
+  "item.eternia.soulstealer": "§bSoulstealer",
+  "item.eternia.ender_blade": "§5Ender Blade",
   "item.eternia.elemental_convergence": "The §9§lE§r§a§ll§r§b§le§r§c§lm§r§d§le§r§e§ln§r§6§lt§r§5§la§r§3§ll§r Convergence",
   "item.eternia.kings_crown": "§6The Kings Crown",
 
@@ -69,6 +82,13 @@
   "item.eternia.chicken_spawn": "Chicken Spawner",
   "item.eternia.horse_spawn": "Horse Spawner",
   "item.eternia.coin": "§6§lCoin",
+  "item.eternia.ender_star": "Ender Star",
+  "item.eternia.nether_reactor_core": "Nether Reactor Core",
+  "item.eternia.ender_reactor_core": "Ender Reactor Core",
+  "item.eternia.bone_mealer": "§aBone Mealer",
+  "item.eternia.cooked_carrot": "Cooked Carrot",
+  "item.eternia.shulker_dust": "Shulker Dust",
+  "item.eternia.enderite_ingot": "Enderite Ingot",
 
   "_comment": "Blocks",
   "block.eternia.pedestal": "Pedestal",
@@ -76,7 +96,6 @@
 
   "_comment": "Enchantments",
   "enchantment.eternia.cursed": "§cCursed",
-  "enchantment.eternia.phoenix": "§cPhoenix",
 
   "_comment": "Effects",
   "effect.eternia.bleed": "§4Bleed",
@@ -97,8 +116,13 @@
   "effect.eternia.dripstone": "§aDripstone",
   "effect.eternia.slammed": "§aSlammed",
   "death.attack.slammed": "%1$s was slammed into the ground",
+  "effect.eternia.gale": "§7Gale",
+  "effect.eternia.ender": "§5Ender",
 
   "_comment": "Item Group",
   "itemgroup.eternia.items": "Eternia Items",
-  "itemgroup.eternia.god_items": "Eternia God"
+  "itemgroup.eternia.god_weapons_t1": "Eternia Tier 1 God Weapons",
+  "itemgroup.eternia.god_weapons_t2": "Eternia Tier 2 God Weapons",
+  "itemgroup.eternia.god_weapons_t3": "Eternia Tier 3 God Weapons",
+  "itemgroup.eternia.event": "Eternia Event"
 }

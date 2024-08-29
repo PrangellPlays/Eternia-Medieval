@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "eternia:ender_reactor_core"
+  },
+  "base": {
+    "item": "eternia:phoenix_sword"
+  },
+  "addition": {
+    "item": "eternia:ender_star"
+  },
+  "result": {
+    "item": "eternia:phoenix_blade"
+  }
+}

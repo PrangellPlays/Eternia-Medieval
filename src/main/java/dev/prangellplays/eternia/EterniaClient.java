@@ -1,5 +1,7 @@
 package dev.prangellplays.eternia;
 
+import dev.prangellplays.eternia.block.entity.PedestalRenderer;
+import dev.prangellplays.eternia.block.entity.WeaponPedestalRenderer;
 import dev.prangellplays.eternia.client.EterniaClientPacketHandler;
 import dev.prangellplays.eternia.client.entity.EterniaEntityRenderers;
 import dev.prangellplays.eternia.client.models.kings_crown.KingsCrownModel;
@@ -7,6 +9,7 @@ import dev.prangellplays.eternia.client.renderer.EterniaRenderer;
 import dev.prangellplays.eternia.entity.client.CursedArrowRenderer;
 import dev.prangellplays.eternia.item.util.Armour;
 import dev.prangellplays.eternia.item.util.EterniaModelPredicateProvider;
+import dev.prangellplays.eternia.registry.EterniaBlockEntities;
 import dev.prangellplays.eternia.registry.EterniaBlocks;
 import dev.prangellplays.eternia.registry.EterniaEntityTypes;
 import dev.prangellplays.eternia.screen.EterniaScreenHandlers;
@@ -19,6 +22,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
@@ -42,6 +46,8 @@ public class EterniaClient implements ClientModInitializer {
         HandledScreens.register(EterniaScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
         HandledScreens.register(EterniaScreenHandlers.WEAPON_PEDESTAL_SCREEN_HANDLER, WeaponPedestalScreen::new);
 
+        BlockEntityRendererFactories.register(EterniaBlockEntities.WEAPON_PEDESTAL_BE, WeaponPedestalRenderer::new);
+        BlockEntityRendererFactories.register(EterniaBlockEntities.PEDESTAL_BE, PedestalRenderer::new);
         BlockRenderLayerMap.INSTANCE.putBlock(EterniaBlocks.PEDESTAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EterniaBlocks.WEAPON_PEDESTAL, RenderLayer.getCutout());
 

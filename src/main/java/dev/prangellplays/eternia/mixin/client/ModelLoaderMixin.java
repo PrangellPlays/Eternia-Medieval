@@ -25,5 +25,6 @@ public abstract class ModelLoaderMixin {
     public void addModel(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
         this.addModel(new ModelIdentifier(Eternia.MOD_ID, "natures_undergrowth_handheld", "inventory"));
         this.addModel(new ModelIdentifier(Eternia.MOD_ID, "windwalker_blade_handheld", "inventory"));
+        this.addModel(new ModelIdentifier(Eternia.MOD_ID, "soulstealer_handheld", "inventory"));
     }
 }

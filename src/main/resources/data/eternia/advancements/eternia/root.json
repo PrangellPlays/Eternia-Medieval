@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "killed_by_something": {
+      "conditions": {},
+      "trigger": "minecraft:entity_killed_player"
+    },
+    "killed_something": {
+      "conditions": {},
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "eternia:textures/gui/advancements/backgrounds/eternia.png",
+    "description": "Welcome To Eternia",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "eternia:windwalker_blade"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "Eternia"
+    }
+  },
+  "requirements": [
+    [
+      "killed_something",
+      "killed_by_something"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,294 @@
+{
+  "parent": "eternia:eternia/root",
+  "display": {
+    "icon": {
+      "item": "eternia:windwalker_blade"
+    },
+    "title": "Tier 1",
+    "description": "You located a tier 1 god weapon",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eternia:vine_whip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:vine_whip"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:natures_undergrowth": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:natures_undergrowth"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:phoenix_claws_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:phoenix_claws_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:phoenix_claws_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:phoenix_claws_shovel"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:pharaohs_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:pharaohs_staff"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:deserted_excalibur": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:deserted_excalibur"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:withers_edge_glaive": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:withers_edge_glaive"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:frosted_scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:frosted_scythe"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:glacial_dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:glacial_dagger"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:frostbound_shield": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:frostbound_shield"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:piranha_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:piranha_blade"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:gale_spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:gale_spear"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:root_slicer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:root_slicer"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:flaming_scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:flaming_scythe"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:fungal_gauntlet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:fungal_gauntlet"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:windwalker_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:windwalker_blade"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:dripstone_dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:dripstone_dagger"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:branched_axe_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:branched_axe_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:branched_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:branched_axe"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:cursebone_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:cursebone_bow"
+            ]
+          }
+        ]
+      }
+    },
+    "eternia:celestial_spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:celestial_spear"
+            ]
+          }
+        ]
+      }
+    }
+  },
+    "requirements": [
+      [
+        "eternia:vine_whip",
+        "eternia:natures_undergrowth",
+        "eternia:phoenix_claws_sword",
+        "eternia:phoenix_claws_shovel",
+        "eternia:pharaohs_staff",
+        "eternia:deserted_excalibur",
+        "eternia:withers_edge_glaive",
+        "eternia:frosted_scythe",
+        "eternia:glacial_dagger",
+        "eternia:frostbound_shield",
+        "eternia:piranha_blade",
+        "eternia:gale_spear",
+        "eternia:root_slicer",
+        "eternia:flaming_scythe",
+        "eternia:fungal_gauntlet",
+        "eternia:windwalker_blade",
+        "eternia:dripstone_dagger",
+        "eternia:branched_axe_sword",
+        "eternia:branched_axe",
+        "eternia:cursebone_bow",
+        "eternia:celestial_spear"
+      ]
+    ],
+    "sends_telemetry_event": true
+}

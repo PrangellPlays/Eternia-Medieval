@@ -1,11 +1,11 @@
 package dev.prangellplays.eternia.item.util;
 
-import dev.prangellplays.eternia.registry.EterniaArmour;
+import dev.prangellplays.eternia.registry.EterniaItems;
 import net.minecraft.item.ItemConvertible;
 
 public enum Armour {
 
-    KINGS_CROWN("kings_crown", false, true, false, EterniaArmour.KINGS_CROWN);
+    KINGS_CROWN("kings_crown", false, true, false, EterniaItems.KINGS_CROWN);
 
     private final String name;
     private final ItemConvertible[] items;

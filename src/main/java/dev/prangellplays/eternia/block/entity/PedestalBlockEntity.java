@@ -28,10 +28,7 @@ import org.jetbrains.annotations.Nullable;
 public class PedestalBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
-    private static final int INPUT_SLOT = 0;
-    private static final int FLUID_ITEM_SLOT = 1;
-    private static final int OUTPUT_SLOT = 2;
-    private static final int ENERGY_ITEM_SLOT = 3;
+    private static final int SLOT = 2;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -100,24 +97,13 @@ public class PedestalBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
-        if(canInsertIntoOutputSlot()) {
-            increaseCraftingProgress();
+        if(canInsertIntoSlot()) {
             markDirty(world, pos, state);
-        } else {
-            resetProgress();
         }
     }
 
-    private void resetProgress() {
-        this.progress = 0;
-    }
-
-    private void increaseCraftingProgress() {
-        this.progress++;
-    }
-
-    private boolean canInsertIntoOutputSlot() {
-        return this.getStack(OUTPUT_SLOT).isEmpty() ||
-                this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
+    private boolean canInsertIntoSlot() {
+        return this.getStack(SLOT).isEmpty() ||
+                this.getStack(SLOT).getCount() < this.getStack(SLOT).getMaxCount();
     }
 }

@@ -1,0 +1,34 @@
+{
+  "parent": "eternia:eternia/root",
+  "display": {
+    "icon": {
+      "item": "eternia:soulstealer"
+    },
+    "title": "Survivor",
+    "description": "You won the soulsteal event",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "eternia:soulstealer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eternia:soulstealer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eternia:soulstealer"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
